@@ -6,6 +6,7 @@ members = [
   "boards/nRF52840-DK",
   "boards/nRF9160-DK",
   "boards/actinius-icarus",
+  "boards/nrf52840-mdk",
   "nrf52810-hal",
   "nrf52832-hal",
   "nrf52840-hal",
@@ -25,4 +26,3 @@ lto = false
 debug = true
 lto = true
 opt-level = "s"
-

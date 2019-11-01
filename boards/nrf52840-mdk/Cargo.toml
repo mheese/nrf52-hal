@@ -1,0 +1,33 @@
+[package]
+authors = ["Wez Furlong <wez@wezfurlong.org>"]
+categories = ["embedded", "hardware-support", "no-std"]
+description = "Rust support for the nrf52840-mdk development board"
+keywords = ["arm", "cortex-m", "nrf52840", "hal"]
+license = "MIT OR Apache-2.0"
+name = "nrf52840-mdk"
+repository = "https://github.com/nrf-rs/nrf52840-mdk"
+version = "0.0.1"
+edition = "2018"
+
+[dependencies]
+nrf52840-hal = { version = "0.8.0", path = "../../nrf52840-hal" }
+
+[dev-dependencies]
+cortex-m-rt = "0.6"
+panic-halt = "0.2"
+
+[features]
+rt = ["nrf52840-hal/rt"]
+default = ["rt"]
+#usb = ["nrf52840-hal/usb"]
+
+[profile.dev]
+incremental = false
+codegen-units = 1
+debug = true
+lto = false
+
+[profile.release]
+debug = true
+lto = true
+opt-level = "s"

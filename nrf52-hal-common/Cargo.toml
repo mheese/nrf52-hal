@@ -40,7 +40,8 @@ version = "0.8.0"
 
 [dependencies.nrf52840-pac]
 optional = true
-version = "0.8.0"
+git = "https://github.com/mheese/nrf52840-pac.git"
+branch = "master"
 
 [dependencies.nrf9160-pac]
 optional = true

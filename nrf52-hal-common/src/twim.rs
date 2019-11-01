@@ -32,7 +32,7 @@ use crate::gpio::{
 
 use crate::target_constants::EASY_DMA_SIZE;
 
-pub use twim0::frequency::FREQUENCYW as Frequency;
+pub use twim0::frequency::FREQUENCY_A as Frequency;
 
 
 /// Interface to a TWIM instance

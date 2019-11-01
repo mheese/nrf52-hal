@@ -39,8 +39,8 @@ use crate::timer::{self, Timer};
 
 // Re-export SVD variants to allow user to directly set values
 pub use uarte0::{
-    baudrate::BAUDRATEW as Baudrate,
-    config::PARITYW as Parity,
+    baudrate::BAUDRATE_A as Baudrate,
+    config::PARITY_A as Parity,
 };
 
 

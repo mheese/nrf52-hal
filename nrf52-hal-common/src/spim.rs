@@ -10,7 +10,7 @@ use crate::target::{spim0_ns as spim0, SPIM0_NS as SPIM0 };
 #[cfg(not(feature="9160"))]
 use crate::target::{spim0, SPIM0};
 
-pub use spim0::frequency::FREQUENCYW as Frequency;
+pub use spim0::frequency::FREQUENCY_A as Frequency;
 pub use embedded_hal::spi::{Mode, Phase, Polarity, MODE_0, MODE_1, MODE_2, MODE_3};
 
 use core::iter::repeat_with;
